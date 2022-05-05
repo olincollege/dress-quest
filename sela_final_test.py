@@ -122,20 +122,21 @@ class Outfit():
 screen = pygame.display.set_mode([500, 668])
 background = pygame.image.load('sela_test_images/back_bg_layer.png')
 foreground = pygame.image.load('sela_test_images/front_bg_layer.png')
+instructions = pygame.image.load('sela_test_images/instructions.png')
 
 outfit = Outfit()
 
 # Run until the user asks to quit
 running = True
 while running:
-    
+    screen.blit(instructions, (0,0))
     # Did the user click the window close button?
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
         outfit.show_clothes()
         if event.type == KEYDOWN:
-            # set instruction screen visible to false says press right arrow to continue
+            instructions = pygame.image.load('sela_test_images/enter_instruct.png')
             pressed_keys = pygame.key.get_pressed()
             if pressed_keys[K_UP]:
                 if selector == 0: selector = 2
@@ -155,11 +156,11 @@ while running:
                 if selector == 0: i_hat = outfit.change_left(i_hat, clothing)
             #if enter key is pressed: move on to platformer
 
-    
     screen.blit(background, (0,0))
     screen.blit(foreground, (0,0))
     screen.blit(pygame.image.load(arrow_list[selector]), (0,0))
-
+    screen.blit(instructions, (0,0))
+    
     outfit.show_clothes()
     
     # Flip the display
