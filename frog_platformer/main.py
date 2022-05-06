@@ -20,7 +20,7 @@ def main():
         view.draw_platforms()
 
         controller.move_player()
-        player.update_pos()
+        player.update_pos(platforms.group)
 
         platforms.generate()
         platforms.scroll()

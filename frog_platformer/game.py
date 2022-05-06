@@ -5,7 +5,6 @@ class Game:
     SCREEN_HEIGHT = 500
 
     FPS = 60
-    # SCROLL_THRESH = 200
 
     def __init__(self):
         pygame.init()
