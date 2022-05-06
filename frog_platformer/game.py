@@ -14,7 +14,6 @@ class Game:
 
         self.clock = pygame.time.Clock()
         self.running = True
-        scroll = 0
 
     def update(self):
         self.clock.tick(self.FPS)

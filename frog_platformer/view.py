@@ -12,6 +12,8 @@ class View():
     
     def draw_player(self):
         self._game.screen.blit(self._player.img, self._player.rect)
+        pygame.draw.rect(self._game.screen, (0, 230, 0), self._player.rect, 2)
+        pygame.draw.rect(self._game.screen, (250, 30, 0), self._player._jump_hitbox, 2)
     
     def draw_platforms(self):
         self._platforms.group.draw(self._game.screen)

@@ -7,8 +7,9 @@ class Controller():
     
     def move_player(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_UP] and self._player.rect.bottom >= 300:
-            self._player.jump()
+        if keys[pygame.K_UP]:
+            if self._player.on_platform:
+                self._player.jump()
         if keys[pygame.K_RIGHT] and self._player.rect.bottomright[0] <= \
             self._game.SCREEN_WIDTH:
             self._player.set_xdir(1)
