@@ -5,21 +5,14 @@ class Controller():
         self._game = game
         self._player = player
     
-    def move_x(self):
-        dx = 0
-
-        # process keypresses
-        key = pygame.key.get_pressed()
-        if key[pygame.K_a]:
-            dx = -10
-        if key[pygame.K_d]:
-            dx = 10
-
-        # check screen edge
-        if self._player.rect.left + dx < 0:
-            dx = -self._player.rect.left
-        if self._player.rect.right + dx > 400:
-            dx = 400 - self._player.rect.right
-        
-        # update player position
-        self._player.move_x(dx)
+    def move_player(self):
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_UP] and self._player.rect.bottom >= 300:
+            self._player.jump()
+        if keys[pygame.K_RIGHT] and self._player.rect.bottomright[0] <= \
+            self._game.SCREEN_WIDTH:
+            self._player.set_xdir(1)
+        elif keys[pygame.K_LEFT] and self._player.rect.bottomleft[0] >= 0:
+            self._player.set_xdir(-1)
+        else:
+            self._player.set_xdir(0)

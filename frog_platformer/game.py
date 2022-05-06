@@ -5,6 +5,7 @@ class Game:
     SCREEN_HEIGHT = 500
 
     FPS = 60
+    # SCROLL_THRESH = 200
 
     def __init__(self):
         pygame.init()
@@ -14,6 +15,7 @@ class Game:
 
         self.clock = pygame.time.Clock()
         self.running = True
+        scroll = 0
 
     def update(self):
         self.clock.tick(self.FPS)

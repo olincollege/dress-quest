@@ -2,18 +2,32 @@ from game import Game
 from view import View
 from player import Player
 from controller import Controller
+from platforms import Platforms
 
-game = Game()
-player = Player(game)
-view = View(game, player)
-controller = Controller(game, player)
+def main():
+
+    game = Game()
+    player = Player(game)
+    platforms = Platforms(game)
+    
+    view = View(game, player, platforms)
+
+    controller = Controller(game, player)
+    
+    while game.running:
+        view.draw_bg()
+        view.draw_player()
+        view.draw_platforms()
+
+        controller.move_player()
+        player.update_pos()
+
+        platforms.generate()
+        platforms.scroll()
+
+        game.update()
+        view.update()
 
 
-while game.running:
-    view.draw_bg()
-    view.draw_player()
 
-    controller.move_x()
-
-    game.update()
-    view.update()
+main()
