@@ -19,7 +19,8 @@ while game.running:
   view.draw_bg()
   view.draw_instructions()
   view.draw_clothes()
-  
+  view.draw_arrows()
+
   view.update()
 
 pygame.quit()

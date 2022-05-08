@@ -32,7 +32,7 @@ class View:
     
     def draw_arrows(self):
         self._game.screen.blit(pygame.image.load(\
-            self._game.ARROWS[self.game.item]), (0, 0))
+            self.ARROWS[self._game.item]), (0, 0))
     
     def update(self):
         pygame.display.update()
