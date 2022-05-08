@@ -1,17 +1,28 @@
 import pygame
 
 class Controller:
-    def __init__(self, game, player):
-        arrow_list = [
-            'sela_test_images/top_select.png',
-            'sela_test_images/mid_select.png',
-            'sela_test_images/bottom_select.png'
-        ]
+    """
+    Controller for changing the frog sprite's clothing.
 
+    Attributes:
+        game: An instance of the Game class, representing the current game
+            being played
+        player: An instance of the Player class, representing the player
+            being controlled by the controller
+    """
+
+    def __init__(self, game, player):
         self.game = game
         self.player = player
 
     def change_clothes(self):
+        """
+        Changes the clothing on the player sprite using input from the arrows.
+
+        The left and right arrows are used to scroll between clothing items,
+        and the up and down arrows are used to select which item of clothing
+        is being changed (hat, top, or bottom)
+        """
         for event in self.game.events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_DOWN:
