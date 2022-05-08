@@ -31,8 +31,9 @@ class View:
         self._game.screen.blit(self.instructions_img, (0, 0))
     
     def draw_arrows(self):
-        self._game.screen.blit(pygame.image.load(\
-            self.ARROWS[self._game.item]), (0, 0))
+        if not self._game.show_instructions:
+            self._game.screen.blit(pygame.image.load(\
+                self.ARROWS[self._game.item]), (0, 0))
     
     def update(self):
         pygame.display.update()

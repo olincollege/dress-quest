@@ -20,6 +20,7 @@ class Game:
             if event.type == pygame.QUIT:
                 self.running = False
             if event.type == pygame.KEYDOWN:
-                self.show_instructions = False
+                if event.key == pygame.K_SPACE:
+                    self.show_instructions = False
                 if event.key == pygame.K_RETURN:
                     self.dress_up_running = False

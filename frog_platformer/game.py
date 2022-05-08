@@ -18,7 +18,8 @@ class Game:
     def update(self):
         self.clock.tick(self.FPS)
 
-        for event in pygame.event.get():
+        self.events = pygame.event.get()
+
+        for event in self.events:
             if event.type == pygame.QUIT:
                 self.running = False
-
