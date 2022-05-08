@@ -8,3 +8,6 @@ The dress up game is controlled using the left and right arrow keys to scroll be
 
 # How to Run
 You can download the code for our project from this git repository, either by cloning the repository to your computer or downloading the ZIP. To run this code, you will first need to install one additional package, pygame. This package can be installed via pip, by typing ```python -m pip install pygame``` into your terminal. Once pygame is installed, you can run the project by navigating into the folder containing the code from this repository and typing ```python main.py``` into your terminal. 
+
+# Test Link to Website
+[click](https://redesigned-doodle-c69ebf4f.pages.github.io/home)
