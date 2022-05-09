@@ -10,7 +10,7 @@ theme: slate
 </head>
 
 <div class="navbar">
-  <a class="active" href="/home">Home</a>
+  <a href="/home">Home</a>
   <a href="/about">About Us</a>
   <a href="https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run">Install</a>
   <a href="https://github.com/olincollege/dress-quest.git">GitHub Repo</a>
