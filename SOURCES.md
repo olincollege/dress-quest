@@ -27,6 +27,7 @@ theme: slate
     allowfullscreen
 >
 </iframe>
+
 - [Jumpy Playlist](https://www.youtube.com/playlist?list=PLjcN1EyupaQlBSrfP4_9SdpJIcfnSJgzL)
 <iframe
     width="640"
@@ -36,6 +37,7 @@ theme: slate
     allowfullscreen
 >
 </iframe>
+
 - [Creating a Platformer in Pygame](https://www.youtube.com/watch?v=YWN8GcmJ-jA)
 <iframe
     width="640"
@@ -45,4 +47,5 @@ theme: slate
     allowfullscreen
 >
 </iframe>
-[The Ultimate Introduction to Python](https://www.youtube.com/watch?v=AY9MnQ4x3zk)
+
+- [The Ultimate Introduction to Python](https://www.youtube.com/watch?v=AY9MnQ4x3zk)
