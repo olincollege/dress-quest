@@ -1,4 +1,4 @@
-/*.navbar {
+.navbar {
   background-color: #2e2e2e;
 }
 
@@ -10,15 +10,14 @@
   font-size: 20px;
 }
 
-.topnav a:hover {
+.navbar a:hover {
   background-color: #4d85ff;
   color: white;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
+.navbar a.active {
   text-decoration: underline;
-} */
+} 
 
 /*manually adding Slate theme */
 .highlight table td{padding:5px}.highlight table pre{margin:0}.highlight
