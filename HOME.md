@@ -9,7 +9,7 @@ theme: slate
   <link rel="stylesheet" href="/website_assets/style.css">
 </head>
 
-<div>
+<div class = "navbar">
   <a href="/home">Home</a>
   <a href="/about">About Us</a>
   <a href="https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run">Install</a>
