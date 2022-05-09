@@ -1,7 +1,12 @@
+"""
+Contains classes for the players of both the dress up and platformer games.
+"""
+
 import pygame
 from clothing import hats, tops, bottoms
 
-class DG_Player:
+
+class DgPlayer:
     """
     Player for the dress up game, holds info on outfit being worn.
 
@@ -18,6 +23,7 @@ class DG_Player:
         _top_coords: the coordinates of the top being worn
         _bottom_coords: the coordinates of the bottom being worn
     """
+
     def __init__(self):
         self.i_hat = 0
         self.i_top = 0
@@ -26,7 +32,7 @@ class DG_Player:
         self.update_outfit()
         self.update_coords()
 
-    def change_outfit(self, item, dir):
+    def change_outfit(self, item, direction):
         """
         Change which article of clothing is being worn.
 
@@ -38,13 +44,13 @@ class DG_Player:
                 is pressed
         """
         if item == 0:
-            self.i_hat += dir
+            self.i_hat += direction
             self.i_hat %= len(hats)
         elif item == 1:
-            self.i_top += dir
+            self.i_top += direction
             self.i_top %= len(tops)
         else:
-            self.i_bottom += dir
+            self.i_bottom += direction
             self.i_bottom %= len(bottoms)
 
         self.update_outfit()
@@ -81,7 +87,7 @@ class DG_Player:
         return [self._hat_coords, self._top_coords, self._bottom_coords]
 
 
-class FP_Player:
+class FpPlayer:
     """
     Player sprite for the platformer game.
 
@@ -127,12 +133,11 @@ class FP_Player:
         self.rect.center = (game.SCREEN_WIDTH // 2, game.SCREEN_HEIGHT - 200)
 
         self._jump_hitbox = self.IMG_JUMP.get_rect()
-        self._jump_hitbox.center = (self.rect.centerx, \
-            self.rect.centery + 25)
+        self._jump_hitbox.center = (self.rect.centerx,
+                                    self.rect.centery + 25)
 
         self._direction = pygame.math.Vector2(0, 0)
         self._on_platform = False
-
 
     def set_xdir(self, xdir):
         """
@@ -168,7 +173,7 @@ class FP_Player:
         for platform in platforms:
             if platform.rect.colliderect(hitbox):
                 if self.rect.bottom <= platform.rect.bottom and \
-                    self._direction.y > 0:
+                        self._direction.y > 0:
                     platform_on = platform
                     self._on_platform = True
         if self._on_platform:
@@ -205,8 +210,8 @@ class FP_Player:
         Check if the player has gone off the screen and reset if so.
         """
         if self.rect.top > self._game.SCREEN_HEIGHT:
-            self.rect.center = (self._game.SCREEN_WIDTH // 2, \
-                self._game.SCREEN_HEIGHT - 600)
+            self.rect.center = (self._game.SCREEN_WIDTH // 2,
+                                self._game.SCREEN_HEIGHT - 600)
             self.update_jump_hitbox()
             self._direction.y = self.GRAVITY
 

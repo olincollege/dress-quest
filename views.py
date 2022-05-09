@@ -1,6 +1,11 @@
+"""
+Contains classes to control the view of each game, with methods to update
+what is drawn on the game screen.
+"""
+
 import pygame
 
-class DG_View:
+class DgView:
     """
     View for the dress up game, contains functions for updating the display.
 
@@ -12,9 +17,9 @@ class DG_View:
             instructions image, changes when start instructions are closed
     """
     ARROWS = [
-            'sela_test_images/top_select.png', \
-            'sela_test_images/mid_select.png', \
-            'sela_test_images/bottom_select.png'
+        'sela_test_images/top_select.png',
+        'sela_test_images/mid_select.png',
+        'sela_test_images/bottom_select.png'
     ]
 
     def __init__(self, game, player):
@@ -23,7 +28,8 @@ class DG_View:
 
         self.BG_IMG = pygame.image.load('sela_test_images/back_bg_layer.png')
         self.FG_IMG = pygame.image.load('sela_test_images/front_bg_layer.png')
-        self.instructions_img = pygame.image.load('sela_test_images/instructions.png')
+        self.instructions_img = pygame.image.load(
+            'sela_test_images/instructions.png')
 
     def draw_bg(self):
         """
@@ -37,8 +43,8 @@ class DG_View:
         Draw the clothes the frog is wearing in the pygame window.
         """
         for i in range(3):
-            self._game.screen.blit(self._player.images[i], \
-                self._player.coords[i])
+            self._game.screen.blit(self._player.images[i],
+                                   self._player.coords[i])
 
     def draw_instructions(self):
         """
@@ -58,31 +64,34 @@ class DG_View:
         is being changed.
         """
         if not self._game.show_instructions:
-            self._game.screen.blit(pygame.image.load(\
+            self._game.screen.blit(pygame.image.load(
                 self.ARROWS[self._game.item]), (0, 0))
 
-    def update(self):
+    @staticmethod
+    def update():
         """
         Update the display.
         """
         pygame.display.update()
 
 
-class FP_View():
+class FpView():
     """
     View for the platformer, contains functions for updating the display.
     """
+
     def __init__(self, game, player, platforms):
         self._game = game
         self._player = player
         self._platforms = platforms
-        self._BG_IMG = pygame.image.load("assets/tree_background.png").convert_alpha()
+        self.BG_IMG = pygame.image.load(
+            "assets/tree_background.png").convert_alpha()
 
     def draw_bg(self):
         """
         Draw the background for the game.
         """
-        self._game.screen.blit(self._BG_IMG, (0, 0))
+        self._game.screen.blit(self.BG_IMG, (0, 0))
 
     def draw_player(self):
         """
@@ -96,7 +105,8 @@ class FP_View():
         """
         self._platforms.group.draw(self._game.screen)
 
-    def update(self):
+    @staticmethod
+    def update():
         """
         Update the display window.
         """

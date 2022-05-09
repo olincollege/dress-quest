@@ -1,3 +1,8 @@
+"""
+Contains code for the Game class, which is used to run both the dress up
+and platformer games.
+"""
+
 import pygame
 
 class Game:
@@ -26,14 +31,15 @@ class Game:
 
     def __init__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode((self.SCREEN_WIDTH, \
-            self.SCREEN_HEIGHT))
+        self.screen = pygame.display.set_mode((self.SCREEN_WIDTH,
+                                               self.SCREEN_HEIGHT))
 
         self.running = True
         self.show_instructions = True
         self.game_state = "dressup"
         self.clock = pygame.time.Clock()
         self.item = 0
+        self.events = []
 
     def update(self):
         """

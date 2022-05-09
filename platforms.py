@@ -1,5 +1,10 @@
+"""
+Contains classes for working with the platforms.
+"""
+
 import random
 import pygame
+
 
 class Platform(pygame.sprite.Sprite):
     """
@@ -12,17 +17,19 @@ class Platform(pygame.sprite.Sprite):
         rect: a pygame rect that holds the platform's location and controls
             collisions with it
     """
-    def __init__(self, x, y):
+
+    def __init__(self, x_init, y_init):
         pygame.sprite.Sprite.__init__(self)
-        self._IMG = pygame.image.load("assets/platform.png").convert_alpha()
+        self.IMG = pygame.image.load("assets/platform.png").convert_alpha()
 
         self.width = 100
         self.height = 20
-        self._IMG = pygame.transform.scale(self._IMG, (self.width, self.height))
+        self.IMG = pygame.transform.scale(
+            self.IMG, (self.width, self.height))
 
-        self.rect = self._IMG.get_rect()
-        self.rect.x = x
-        self.rect.y = y
+        self.rect = self.IMG.get_rect()
+        self.rect.x = x_init
+        self.rect.y = y_init
 
     def move(self, speed):
         """
@@ -49,7 +56,8 @@ class Platform(pygame.sprite.Sprite):
         """
         Returns a pygame surface representing the image for the platform.
         """
-        return self._IMG
+        return self.IMG
+
 
 class Platforms:
     """
@@ -70,8 +78,8 @@ class Platforms:
         self._group = pygame.sprite.Group()
 
         # create starting platform
-        platform = Platform(self._game.SCREEN_WIDTH // 2, \
-            self._game.SCREEN_HEIGHT - 100)
+        platform = Platform(self._game.SCREEN_WIDTH // 2,
+                            self._game.SCREEN_HEIGHT - 100)
 
         self._group.add(platform)
 
@@ -88,8 +96,8 @@ class Platforms:
         Generate new platforms as they move off the screen.
         """
         if len(self._group) < self._MAX_PLATFORMS:
-            p_x = random.randint(0, \
-                self._game.SCREEN_WIDTH - self._PLATFORM_WIDTH)
+            p_x = random.randint(0,
+                                 self._game.SCREEN_WIDTH - self._PLATFORM_WIDTH)
             p_y = self._group.sprites()[-1].rect.y - random.randint(80, 120)
             platform = Platform(p_x, p_y)
             self._group.add(platform)

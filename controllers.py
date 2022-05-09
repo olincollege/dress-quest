@@ -1,6 +1,12 @@
+"""
+Contains classes for the controllers of both the dres up and platformer games,
+which are used to take user input and apply it to the game.
+"""
+
 import pygame
 
-class DG_Controller:
+
+class DgController:
     """
     Controller for changing the frog sprite's clothing.
 
@@ -36,7 +42,7 @@ class DG_Controller:
                     self.player.change_outfit(self.game.item, -1)
 
 
-class FP_Controller():
+class FpController():
     """
     Controller for the player sprite in the platformer.
 
@@ -44,6 +50,7 @@ class FP_Controller():
         _game: the instance of the game being controlled
         _player: the instance of the player being controlled
     """
+
     def __init__(self, game, player):
         self._game = game
         self._player = player
@@ -61,7 +68,7 @@ class FP_Controller():
             if self._player.on_platform:
                 self._player.jump()
         if keys[pygame.K_RIGHT] and self._player.rect.bottomright[0] <= \
-            self._game.SCREEN_WIDTH:
+                self._game.SCREEN_WIDTH:
             self._player.set_xdir(1)
         elif keys[pygame.K_LEFT] and self._player.rect.bottomleft[0] >= 0:
             self._player.set_xdir(-1)

@@ -1,9 +1,10 @@
 import pygame
-from controllers import DG_Controller, FP_Controller
+from controllers import DgController, FpController
 from game import Game
 from platforms import Platforms
-from players import DG_Player, FP_Player
-from views import DG_View, FP_View
+from players import DgPlayer, FpPlayer
+from views import DgView, FpView
+
 
 def main():
     '''
@@ -13,15 +14,15 @@ def main():
     game = Game()
 
     # define dressup game classes
-    dg_player = DG_Player()
-    dg_controller = DG_Controller(game, dg_player)
-    dg_view = DG_View(game, dg_player)
+    dg_player = DgPlayer()
+    dg_controller = DgController(game, dg_player)
+    dg_view = DgView(game, dg_player)
 
     # define platformer classes
-    fp_player = FP_Player(game)
-    fp_controller = FP_Controller(game, fp_player)
+    fp_player = FpPlayer(game)
+    fp_controller = FpController(game, fp_player)
     platforms = Platforms(game)
-    fp_view = FP_View(game, fp_player, platforms)
+    fp_view = FpView(game, fp_player, platforms)
 
     while game.running:
         game.update()
@@ -48,5 +49,6 @@ def main():
             fp_view.update()
 
     pygame.quit()
+
 
 main()

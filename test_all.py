@@ -4,7 +4,7 @@ Unit tests.
 import pytest
 import pygame
 
-from players import DG_Player
+from players import DgPlayer
 from game import Game
 
 pygame.init()
