@@ -16,10 +16,8 @@ permalink: /home/
   <a href="/resources">External Resources</a>
 </div>
 
-![Frog sprite from the game.](/website_assets/frog_game_base_500.png)
 
-
-
+ADD SPACERS
 
 ## Dress Quest
 ### A dress up game where you have to fight for your outfit.
