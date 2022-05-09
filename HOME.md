@@ -23,7 +23,8 @@ permalink: /home/
 ## Dress Quest
 ### A dress up game where you have to fight for your outfit.
 
-<iframe src="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" title="Our Presentation Video" height="1080" width="1920"></iframe>
+<iframe src="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" title="Our Presentation Video" height="720" width="1280"></iframe>
+
 Open <a href="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" target="_blank">video</a> in new tab.
 
 Welcome to Dress Quest!
