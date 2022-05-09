@@ -8,11 +8,13 @@
   text-align: center;
   padding: 20px 20px;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .navbar a:hover {
   background-color: #4d85ff;
   color: white;
+  text-decoration: underline;
 }
 
 .navbar a.active {
