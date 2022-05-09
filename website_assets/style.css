@@ -6,7 +6,8 @@
   padding: 20px 20px;
   font-size: 20px;
   text-decoration: none;
-  background-color: #2e2e2e;
+  border-style: solid;
+  border-color: #2e2e2e;
 }
 
 .navbar a:hover {
