@@ -20,12 +20,13 @@ permalink: /about/
 
 # Meet the Team
 
-## bidrd
+## [bidrd](https://github.com/crane919)
 a bird
 
-## he
+
+## [he](https://github.com/cmccurley22)
 a nerd
 
-## stinky
+## [stinky](https://github.com/c-laD)
 a turd
 
