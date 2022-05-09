@@ -12,8 +12,10 @@ pygame.init()
 #dress up game player test code
 player_coords_test_cases = (
   #test that the clothing appears in the correct spot in the correct order.
-  ( ((0,1), (0,1)), [(190, 457), (0, 0), (0, 0)], '[<Surface(120x50x32 SW)>, <Surface(500x668x32 SW)>, <Surface(500x668x32 SW)>]' ),
-  ( ((1,1), (2,1)), [(0, 0), (176, 520), (159, 522)], '[<Surface(500x668x32 SW)>, <Surface(147x55x32 SW)>, <Surface(197x87x32 SW)>]' ),
+  ( ((0,1), (0,1)), [(190, 457), (0, 0), (0, 0)], '[<Surface(120x50x32 SW)>, \
+                        <Surface(500x668x32 SW)>, <Surface(500x668x32 SW)>]' ),
+  ( ((1,1), (2,1)), [(0, 0), (176, 520), (159, 522)], '[<Surface(500x668x32 SW)>, \
+                            <Surface(147x55x32 SW)>, <Surface(197x87x32 SW)>]' ),
 )
 
 #controller key test code
@@ -67,7 +69,7 @@ def test_player_coords(test_case):
     """
     Test that the clothing appears in the correct spot in the correct order.
     """
-    p = Player()
+    p = DG_Player()
     for item, dir in test_case[0]:
         p.change_outfit(item, dir)
     assert p.coords == test_case[1]
@@ -121,4 +123,4 @@ def test_update2(event):
     game = Game()
     game.update()
     # Check that the event was added.
-    assert game.dress_up_running == False
+    assert game.running == True
