@@ -25,7 +25,6 @@ permalink: /home/
 <h3> A dress up game where you have to fight for your outfit. </h3>
 
 <iframe src="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" title="Our Presentation Video" height="720" width="1280"></iframe><br>
-<p style="color:fafafa"> spacer </p>
 Open <a href="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" target="_blank">video</a> in new tab. <br>
 <p style="color:fafafa"> spacer </p>
 <h3> Welcome to Dress Quest! </h3> 
