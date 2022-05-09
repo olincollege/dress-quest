@@ -19,7 +19,6 @@ theme: slate
 
 
 
-
 ### Referenced Pygame Tutorials
 
 - [Pygame: a Primer](https://realpython.com/pygame-a-primer/)
