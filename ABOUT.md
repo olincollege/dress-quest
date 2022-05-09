@@ -19,6 +19,8 @@ permalink: /about/
 <p style="color:fafafa"> spacer </p>
 <p style="color:fafafa"> spacer </p>
 <p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
 
 ---
 
