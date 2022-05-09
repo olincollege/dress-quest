@@ -20,8 +20,6 @@ theme: slate
 <p style="color:fafafa"> spacer </p>
 <p style="color:fafafa"> spacer </p>
 <p style="color:fafafa"> spacer </p>
-<p style="color:fafafa"> spacer </p>
-<p style="color:fafafa"> spacer </p>
 
 ---
 
