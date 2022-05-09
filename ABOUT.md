@@ -16,8 +16,7 @@ permalink: /about/
   <a href="/resources">External Resources</a>
 </div>
 
-
-
+<div>
 
 ## bidrd
 a bird
@@ -27,3 +26,5 @@ a nerd
 
 ## stinky
 a turd
+
+</div>
