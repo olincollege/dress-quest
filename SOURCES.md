@@ -17,6 +17,10 @@ theme: slate
   <a href="/resources">External Resources</a>
 </div>
 
+<p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
+
 ---
 
 ### Referenced Pygame Tutorials
