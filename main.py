@@ -17,8 +17,8 @@ def main():
     # define platformer classes
     fp_player = FP_Player(game)
     fp_controller = FP_Controller(game, fp_player)
-    fp_view = FP_View(game, fp_player)
     platforms = Platforms(game)
+    fp_view = FP_View(game, fp_player, platforms)
 
     while game.running:
         game.update()

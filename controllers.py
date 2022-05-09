@@ -26,7 +26,7 @@ class DG_Controller:
         for event in self.game.events:
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_DOWN:
-                    self.game.item = self.game.item + 1 % 3
+                    self.game.item = (self.game.item + 1) % 3
                 elif event.key == pygame.K_UP:
                     self.game.item = (self.game.item - 1) % 3
         

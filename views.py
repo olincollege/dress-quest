@@ -76,7 +76,7 @@ class FP_View():
         self._game = game
         self._player = player
         self._platforms = platforms
-        self._BG_IMG = pygame.image.load("assets/bg.jpg").convert_alpha()
+        self._BG_IMG = pygame.image.load("assets/tree_background.png").convert_alpha()
     
     def draw_bg(self):
         """

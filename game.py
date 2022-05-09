@@ -32,6 +32,7 @@ class Game:
         self.running = True
         self.show_instructions = True
         self.game_state = "dressup"
+        self.clock = pygame.time.Clock()
         
         self.item = 0
     

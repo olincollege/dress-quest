@@ -14,7 +14,7 @@ class Platform(pygame.sprite.Sprite):
     """
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
-        self._IMG = pygame.image.load("assets/rect.png").convert_alpha()
+        self._IMG = pygame.image.load("assets/platform.png").convert_alpha()
         
         self.width = 100
         self.height = 20

@@ -123,12 +123,12 @@ class FP_Player:
 
         self._img = self.IMG_SIT
 
-        self._rect = self.IMG_SIT.get_rect()
-        self._rect.center = (game.SCREEN_WIDTH // 2, game.SCREEN_HEIGHT - 200)
+        self.rect = self.IMG_SIT.get_rect()
+        self.rect.center = (game.SCREEN_WIDTH // 2, game.SCREEN_HEIGHT - 200)
 
         self._jump_hitbox = self.IMG_JUMP.get_rect()
-        self._jump_hitbox.center = (self._rect.centerx, \
-            self._rect.centery + 25)
+        self._jump_hitbox.center = (self.rect.centerx, \
+            self.rect.centery + 25)
 
         self._direction = pygame.math.Vector2(0, 0)
         self._on_platform = False
@@ -163,17 +163,17 @@ class FP_Player:
         if self._img == self.IMG_JUMP:
             hitbox = self._jump_hitbox
         else:
-            hitbox = self._rect
+            hitbox = self.rect
         self.apply_gravity()
         for platform in platforms:
             if platform.rect.colliderect(hitbox):
-                if self._rect.bottom <= platform.rect.bottom and \
+                if self.rect.bottom <= platform.rect.bottom and \
                     self._direction.y > 0:
                     platform_on = platform
                     self._on_platform = True
         if self._on_platform:
             self._img = self.IMG_SIT
-            self._rect.bottom = platform_on.rect.top + 3
+            self.rect.bottom = platform_on.rect.top + 3
     
     def apply_gravity(self):
         """
@@ -181,14 +181,14 @@ class FP_Player:
         """
         self._img = self.IMG_JUMP
         self._direction.y += self.GRAVITY
-        self._rect.y += self._direction.y
+        self.rect.y += self._direction.y
     
     def update_jump_hitbox(self):
         """
         Update the jump hitbox to match the location of the player based on the
         player rect position.
         """
-        self._jump_hitbox.center = (self._rect.centerx, self._rect.centery + 25)
+        self._jump_hitbox.center = (self.rect.centerx, self.rect.centery + 25)
     
     def update_pos(self, platforms):
         """
@@ -196,22 +196,17 @@ class FP_Player:
         gravity, and controller input.
         """
         self.check_collide(platforms)
-        self._rect.x += self._direction.x * self.SPEED
+        self.rect.x += self._direction.x * self.SPEED
         self.update_jump_hitbox()
-
-    @property
-    def x_pos(self):
-        """
-        Return the x position of the player
-        """
-        return self._rect.x
+        self._check_death()
     
-    @property
-    def y_pos(self):
+    def _check_death(self):
         """
-        Return the y position of the player
+        Check if the player has gone off the screen and reset if so.
         """
-        return self._rect.y
+        if self.rect.top > self._game.SCREEN_HEIGHT:
+            self._rect.center = (self._game.SCREEN_WIDTH // 2, \
+                self._game.SCREEN_HEIGHT - 600)
     
     @property
     def img(self):
