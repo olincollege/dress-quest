@@ -108,7 +108,7 @@ class FP_Player:
         _on_platform: a boolean representing whether or not the frog is on a
             platform
     """
-    GRAVITY = .1
+    GRAVITY = .125
     JUMP_SPEED = -5
     SPEED = 8
 
@@ -205,8 +205,10 @@ class FP_Player:
         Check if the player has gone off the screen and reset if so.
         """
         if self.rect.top > self._game.SCREEN_HEIGHT:
-            self._rect.center = (self._game.SCREEN_WIDTH // 2, \
+            self.rect.center = (self._game.SCREEN_WIDTH // 2, \
                 self._game.SCREEN_HEIGHT - 600)
+            self.update_jump_hitbox()
+            self._direction.y = self.GRAVITY
     
     @property
     def img(self):
