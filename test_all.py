@@ -70,8 +70,8 @@ def test_player_coords(test_case):
     Test that the clothing appears in the correct spot in the correct order.
     """
     player = DgPlayer()
-    for item, dir in test_case[0]:
-        player.change_outfit(item, dir)
+    for item, direction in test_case[0]:
+        player.change_outfit(item, direction)
     assert player.coords == test_case[1]
 
 @pytest.mark.parametrize("event, key",
