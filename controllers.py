@@ -1,3 +1,7 @@
+'''
+Contains the classes for the controllers of the dress up and platform games.
+'''
+
 import pygame
 
 class DG_Controller:

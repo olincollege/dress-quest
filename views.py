@@ -1,3 +1,6 @@
+'''
+Contains the classes for the view of both the dress up and platform games.
+'''
 import pygame
 
 class DG_View:

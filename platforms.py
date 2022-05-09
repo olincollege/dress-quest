@@ -1,3 +1,7 @@
+'''
+Contains the classes for creating and controlling game platforms.
+'''
+
 import random
 import pygame
 

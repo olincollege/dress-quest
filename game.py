@@ -1,3 +1,7 @@
+'''
+Contains the game class.
+'''
+
 import pygame
 
 class Game:

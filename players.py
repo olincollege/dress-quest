@@ -1,3 +1,7 @@
+'''
+Creates the player classes for both the dress up and platform games.
+'''
+
 import pygame
 from clothing import hats, tops, bottoms
 
