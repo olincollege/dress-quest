@@ -21,6 +21,8 @@ theme: slate
 <p style="color:fafafa"> spacer </p>
 <p style="color:fafafa"> spacer </p>
 
+![Frog sprite from the game.](/website_assets/frog_game_base_500.png)
+
 ---
 
 ### Referenced Pygame Tutorials
