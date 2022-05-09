@@ -5,6 +5,13 @@ permalink: /home/
 theme: slate
 ---
 
+<div class="topnav">
+  <a class="active" href="/home">Home</a>
+  <a href="/about">About Us</a>
+  <a href="https://github.com/olincollege/dress-quest.git">GitHub Repo</a>
+  <a href="/resources">External Resources</a>
+</div>
+
 # [About Us](/about) [GitHub Repo](https://github.com/olincollege/dress-quest.git) [External Resources](/resources)
 
 ![Frog sprite from the game.](/website_assets/frog_game_base_500.png)
@@ -21,7 +28,7 @@ The game is made of two main stages. In the first (pictured below), players get 
 
 ![A Screenshot showing a dressed up frog.](/website_assets/screenshot_1.jpg)
 
-Once the player finished their outfit, however, they lose their clothes. They must jump through a series of randomly generated platforms and climb a tree where they will win back their cloths.
+Once the player finished their outfit, however, they lose their clothes. They must jump through a series of randomly generated platforms and climb a tree where they will win back their clothes.
 
 ![Screenshot of the platformer.](/website_assets/)
 
