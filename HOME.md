@@ -6,7 +6,7 @@ theme: slate
 ---
 
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/website_assets/style.css">
 </head>
 
 <div class="topnav">
