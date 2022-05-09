@@ -69,11 +69,11 @@ def test_player_coords(test_case):
     """
     Test that the clothing appears in the correct spot in the correct order.
     """
-    p = DgPlayer()
+    player = DgPlayer()
     for item, dir in test_case[0]:
-        p.change_outfit(item, dir)
-    assert p.coords == test_case[1]
-    assert repr(p.images) == test_case[2]
+        player.change_outfit(item, dir)
+    assert player.coords == test_case[1]
+    assert repr(player.images) == test_case[2]
 
 
 @pytest.mark.parametrize("event, key",
@@ -107,7 +107,7 @@ def test_update(event):
     game = Game()
     game.update()
     # Check that the event was added.
-    assert game.show_instructions == False
+    assert game.show_instructions is False
 
 @pytest.mark.parametrize("event",
     get_event_cases2)
@@ -123,4 +123,4 @@ def test_update2(event):
     game = Game()
     game.update()
     # Check that the event was added.
-    assert game.running == True
+    assert game.running is True
