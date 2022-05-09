@@ -18,16 +18,16 @@ theme: slate
 </div>
 
 ### Referenced Pygame Tutorials
-[Text Tutorial](https://realpython.com/pygame-a-primer/)
+- [Pygame: a Primer](https://realpython.com/pygame-a-primer/)
 <iframe
     width="640"
     height="480"
-    src="https://www.youtube.com/playlist?list=PLjcN1EyupaQlBSrfP4_9SdpJIcfnSJgzL"
+    src="https://youtu.be/5FMPAt0n3Nc"
     frameborder="0"
     allowfullscreen
 >
 </iframe>
-[Direct Link](https://www.youtube.com/playlist?list=PLjcN1EyupaQlBSrfP4_9SdpJIcfnSJgzL)
+- [Jumpy Playlist](https://www.youtube.com/playlist?list=PLjcN1EyupaQlBSrfP4_9SdpJIcfnSJgzL)
 <iframe
     width="640"
     height="480"
@@ -36,7 +36,7 @@ theme: slate
     allowfullscreen
 >
 </iframe>
-[Direct Link](https://www.youtube.com/watch?v=YWN8GcmJ-jA)
+- [Creating a Platformer in Pygame](https://www.youtube.com/watch?v=YWN8GcmJ-jA)
 <iframe
     width="640"
     height="480"
@@ -45,4 +45,4 @@ theme: slate
     allowfullscreen
 >
 </iframe>
-[Direct Link](https://www.youtube.com/watch?v=AY9MnQ4x3zk)
+[The Ultimate Introduction to Python](https://www.youtube.com/watch?v=AY9MnQ4x3zk)
