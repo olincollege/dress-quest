@@ -37,6 +37,6 @@ Once the player finished their outfit, however, they lose their clothes. They mu
 
 ![Screenshot of the platformer.](/website_assets/screenshot_2.jpg)
 
-[Install](https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run) Dress Quest! 
+## [Install](https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run) Dress Quest! 
 
 
