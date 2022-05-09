@@ -16,8 +16,9 @@ permalink: /home/
   <a href="/resources">External Resources</a>
 </div>
 
-
-ADD SPACERS
+<p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
+<p style="color:fafafa"> spacer </p>
 
 ## Dress Quest
 ### A dress up game where you have to fight for your outfit.
