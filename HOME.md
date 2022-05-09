@@ -27,14 +27,18 @@ permalink: /home/
 
 Open <a href="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" target="_blank">video</a> in new tab.
 
-Welcome to Dress Quest!
-The game is made of two main stages. In the first (pictured below), players get to dress up their frog. 
+<p>
+Welcome to Dress Quest! <br>
+The game is made of two main stages. In the first (pictured below), players get to dress up their frog. <br>
 A variety of hats, tops, and bottoms are available to choose from to form their dream outfit.
+</p>
 
 <img src="/website_assets/screenshot_1.jpg" alt="A Screenshot showing a dressed up frog." width="500" height="688"/>
 
-Once the player finished their outfit, however, they lose their clothes. 
+<p>
+Once the player finished their outfit, however, they lose their clothes. <br>
 They must jump through a series of randomly generated platforms and climb a tree where they will win back their clothes.
+</p>
 
 <img src="/website_assets/screenshot_2.jpg" alt="Screenshot of the platformer." width="500" height="688"/>
 
