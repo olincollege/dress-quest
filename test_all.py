@@ -69,7 +69,7 @@ def test_player_coords(test_case):
     """
     Test that the clothing appears in the correct spot in the correct order.
     """
-    p = DG_Player()
+    p = DgPlayer()
     for item, dir in test_case[0]:
         p.change_outfit(item, dir)
     assert p.coords == test_case[1]
