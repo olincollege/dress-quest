@@ -4,13 +4,14 @@ Unit tests.
 import pytest
 import pygame
 
-from dg_player import Player
-from dg_game import Game
+from players import DG_Player
+from game import Game
 
 pygame.init()
 
 #dress up game player test code
 player_coords_test_cases = (
+  #test that the clothing appears in the correct spot in the correct order.
   ( ((0,1), (0,1)), [(190, 457), (0, 0), (0, 0)], '[<Surface(120x50x32 SW)>, <Surface(500x668x32 SW)>, <Surface(500x668x32 SW)>]' ),
   ( ((1,1), (2,1)), [(0, 0), (176, 520), (159, 522)], '[<Surface(500x668x32 SW)>, <Surface(147x55x32 SW)>, <Surface(197x87x32 SW)>]' ), 
 )
@@ -64,8 +65,7 @@ get_event_cases2 = [
 @pytest.mark.parametrize("test_case", player_coords_test_cases)
 def test_player_coords(test_case):
   """
-  Test 
-  Args:
+  Test that the clothing appears in the correct spot in the correct order.
     
   """
   p = Player()
