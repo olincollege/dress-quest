@@ -73,8 +73,6 @@ def test_player_coords(test_case):
     for item, dir in test_case[0]:
         player.change_outfit(item, dir)
     assert player.coords == test_case[1]
-    assert repr(player.images) == test_case[2]
-
 
 @pytest.mark.parametrize("event, key",
     get_input_cases)
