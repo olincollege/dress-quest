@@ -31,7 +31,7 @@ class DG_View:
         """
         self._game.screen.blit(self.BG_IMG, (0, 0))
         self._game.screen.blit(self.FG_IMG, (0, 0))
-  
+
     def draw_clothes(self):
         """
         Draw the clothes the frog is wearing in the pygame window.
@@ -39,7 +39,7 @@ class DG_View:
         for i in range(3):
             self._game.screen.blit(self._player.images[i], \
                 self._player.coords[i])
-    
+
     def draw_instructions(self):
         """
         Display the correct instructions in the pygame window.
@@ -51,7 +51,7 @@ class DG_View:
             self.instructions_img = \
                 pygame.image.load('sela_test_images/enter_instruct.png')
         self._game.screen.blit(self.instructions_img, (0, 0))
-    
+
     def draw_arrows(self):
         """
         Display the highlighted arrow to show which article of clothing
@@ -60,7 +60,7 @@ class DG_View:
         if not self._game.show_instructions:
             self._game.screen.blit(pygame.image.load(\
                 self.ARROWS[self._game.item]), (0, 0))
-    
+
     def update(self):
         """
         Update the display.
@@ -77,19 +77,19 @@ class FP_View():
         self._player = player
         self._platforms = platforms
         self._BG_IMG = pygame.image.load("assets/tree_background.png").convert_alpha()
-    
+
     def draw_bg(self):
         """
         Draw the background for the game.
         """
         self._game.screen.blit(self._BG_IMG, (0, 0))
-    
+
     def draw_player(self):
         """
         Draw the player for the game.
         """
         self._game.screen.blit(self._player.img, self._player.rect)
-    
+
     def draw_platforms(self):
         """
         Draw the platforms for the game.

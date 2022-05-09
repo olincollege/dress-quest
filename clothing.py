@@ -1,3 +1,7 @@
+'''
+Stores the file path and coordinates for all of the clothes.
+'''
+
 bottoms = [
     ['sela_test_images/invisible.png', (0, 0)],
     ['clothes/black_bottom.png', (159, 522)],

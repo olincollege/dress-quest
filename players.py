@@ -25,7 +25,7 @@ class DG_Player:
 
         self.update_outfit()
         self.update_coords()
-    
+
     def change_outfit(self, item, dir):
         """
         Change which article of clothing is being worn.
@@ -46,10 +46,10 @@ class DG_Player:
         else:
             self.i_bottom += dir
             self.i_bottom %= len(bottoms)
-        
+
         self.update_outfit()
         self.update_coords()
-    
+
     def update_outfit(self):
         """
         Update the images to correctly show the outfit being worn.
@@ -57,7 +57,7 @@ class DG_Player:
         self._hat_img = pygame.image.load(hats[self.i_hat][0])
         self._top_img = pygame.image.load(tops[self.i_top][0])
         self._bottom_img = pygame.image.load(bottoms[self.i_bottom][0])
-    
+
     def update_coords(self):
         """
         Update the coordinates to correctly show the outfit being worn.
@@ -65,14 +65,14 @@ class DG_Player:
         self._hat_coords = hats[self.i_hat][1]
         self._top_coords = tops[self.i_top][1]
         self._bottom_coords = bottoms[self.i_bottom][1]
-    
+
     @property
     def images(self):
         """
         Returns a list of the images for the clothing items being worn.
         """
         return [self._hat_img, self._top_img, self._bottom_img]
-    
+
     @property
     def coords(self):
         """
@@ -95,10 +95,10 @@ class FP_Player:
 
         _img: a pygame surface representing the current image to display
             for the frog, based on its state
-        
+
         _rect: a pygame rect representing the position of the player, also
             used for collision detection
-        
+
         _jump_hitbox: a pygame rect used as the player's hitbox when they are
             jumping to ensure the platform collision is accurate to the
             image being displayed
@@ -132,8 +132,8 @@ class FP_Player:
 
         self._direction = pygame.math.Vector2(0, 0)
         self._on_platform = False
-        
-    
+
+
     def set_xdir(self, xdir):
         """
         Set the x direction of the player.
@@ -149,7 +149,7 @@ class FP_Player:
         the player jumps.
         """
         self._direction.y = self.JUMP_SPEED
-    
+
     def check_collide(self, platforms):
         """
         Check for collisions between the player and the platforms and
@@ -174,7 +174,7 @@ class FP_Player:
         if self._on_platform:
             self._img = self.IMG_SIT
             self.rect.bottom = platform_on.rect.top + 3
-    
+
     def apply_gravity(self):
         """
         Apply gravity to the frog and change the image to be jumping/falling.
@@ -182,14 +182,14 @@ class FP_Player:
         self._img = self.IMG_JUMP
         self._direction.y += self.GRAVITY
         self.rect.y += self._direction.y
-    
+
     def update_jump_hitbox(self):
         """
         Update the jump hitbox to match the location of the player based on the
         player rect position.
         """
         self._jump_hitbox.center = (self.rect.centerx, self.rect.centery + 25)
-    
+
     def update_pos(self, platforms):
         """
         Update the position of the player based on platform collisions,
@@ -199,7 +199,7 @@ class FP_Player:
         self.rect.x += self._direction.x * self.SPEED
         self.update_jump_hitbox()
         self._check_death()
-    
+
     def _check_death(self):
         """
         Check if the player has gone off the screen and reset if so.
@@ -209,14 +209,14 @@ class FP_Player:
                 self._game.SCREEN_HEIGHT - 600)
             self.update_jump_hitbox()
             self._direction.y = self.GRAVITY
-    
+
     @property
     def img(self):
         """
         Return the image of the player
         """
         return self._img
-    
+
     @property
     def on_platform(self):
         """

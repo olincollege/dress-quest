@@ -29,7 +29,7 @@ class DG_Controller:
                     self.game.item = (self.game.item + 1) % 3
                 elif event.key == pygame.K_UP:
                     self.game.item = (self.game.item - 1) % 3
-        
+
                 if event.key == pygame.K_RIGHT:
                     self.player.change_outfit(self.game.item, 1)
                 elif event.key == pygame.K_LEFT:
@@ -47,7 +47,7 @@ class FP_Controller():
     def __init__(self, game, player):
         self._game = game
         self._player = player
-    
+
     def move_player(self):
         """
         Takes input from the arrow keys and moves the player around screen.

@@ -1,5 +1,5 @@
-import pygame
 import random
+import pygame
 
 class Platform(pygame.sprite.Sprite):
     """
@@ -15,11 +15,11 @@ class Platform(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
         self._IMG = pygame.image.load("assets/platform.png").convert_alpha()
-        
+
         self.width = 100
         self.height = 20
         self._IMG = pygame.transform.scale(self._IMG, (self.width, self.height))
-        
+
         self.rect = self._IMG.get_rect()
         self.rect.x = x
         self.rect.y = y
@@ -32,7 +32,7 @@ class Platform(pygame.sprite.Sprite):
             speed: the amount the platform should move
         """
         self.rect.y += speed
-    
+
     def check_remove(self, screen_height):
         """
         Check if the platform has left the screen and kill it if it has.
@@ -72,9 +72,9 @@ class Platforms:
         # create starting platform
         platform = Platform(self._game.SCREEN_WIDTH // 2, \
             self._game.SCREEN_HEIGHT - 100)
-        
+
         self._group.add(platform)
-    
+
     def scroll(self):
         """
         Scroll by moving all the platforms down the screen.
@@ -82,7 +82,7 @@ class Platforms:
         for platform in self._group:
             platform.move(self._PLATFORM_SPEED)
             platform.check_remove(self._game.SCREEN_HEIGHT)
-    
+
     def generate(self):
         """
         Generate new platforms as they move off the screen.

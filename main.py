@@ -6,6 +6,9 @@ from players import DG_Player, FP_Player
 from views import DG_View, FP_View
 
 def main():
+    '''
+    Runs the dress up and then platformer game.
+    '''
     # define game class
     game = Game()
 
@@ -24,7 +27,7 @@ def main():
         game.update()
         if game.game_state == "dressup":
             dg_controller.change_clothes()
-            
+
             dg_view.draw_bg()
             dg_view.draw_instructions()
             dg_view.draw_clothes()

@@ -33,13 +33,12 @@ class Game:
         self.show_instructions = True
         self.game_state = "dressup"
         self.clock = pygame.time.Clock()
-        
         self.item = 0
-    
+
     def update(self):
         """
         Check for pygame events to transition between game states and control
-        the frame rate. 
+        the frame rate.
 
         If the window is closed, quit the game.
         If the space bar is pressed, hide the instructions.
