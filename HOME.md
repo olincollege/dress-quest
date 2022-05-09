@@ -2,7 +2,6 @@
 layout: page
 title: "HOME"
 permalink: /home/
-theme: slate
 ---
 
 <head>
@@ -18,6 +17,9 @@ theme: slate
 </div>
 
 ![Frog sprite from the game.](/website_assets/frog_game_base_500.png)
+
+
+
 
 ## Dress Quest
 ### A dress up game where you have to fight for your outfit.
