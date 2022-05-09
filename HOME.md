@@ -35,7 +35,7 @@ The game is made of two main stages. In the first (pictured below), players get 
 
 Once the player finished their outfit, however, they lose their clothes. They must jump through a series of randomly generated platforms and climb a tree where they will win back their clothes.
 
-![Screenshot of the platformer.](/website_assets/)
+![Screenshot of the platformer.](/website_assets/screenshot_2.jpg)
 
 [Install](https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run) Dress Quest! 
 
