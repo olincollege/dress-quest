@@ -25,10 +25,10 @@ permalink: /about/
 # Meet the Team 
 
 ## [_bidrd](https://github.com/crane919)
-<p><span style=color:"fafafa">s p</span>a bird</p>
+a bird
 
 ## [_he](https://github.com/cmccurley22)
-<p><span style=color:"fafafa">a c</span>a nerd</p>
+a nerd
 
 ## [_stinky](https://github.com/c-laD) 
-<p><span style=color:"fafafa">e e</span>a turd</p>
+a turd
