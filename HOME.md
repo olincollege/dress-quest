@@ -24,7 +24,7 @@ permalink: /home/
 ### A dress up game where you have to fight for your outfit.
 
 <iframe src="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" title="Our Presentation Video" height="1080" width="1920"></iframe>
-[Our Presentation Video](https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4)
+Open <a href="https://user-images.githubusercontent.com/98287198/167447225-e6f4012f-62d4-469b-95a8-c79adacadc19.mp4" target="_blank">video</a> in new tab.
 
 Welcome to Dress Quest!
 The game is made of two main stages. In the first (pictured below), players get to dress up their frog. 
