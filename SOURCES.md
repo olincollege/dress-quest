@@ -17,7 +17,7 @@ theme: slate
   <a href="/resources">External Resources</a>
 </div>
 
-
+---
 
 ### Referenced Pygame Tutorials
 
