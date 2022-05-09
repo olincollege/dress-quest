@@ -2,7 +2,6 @@
 layout: page
 title: "ABOUT"
 permalink: /about/
-theme: slate
 ---
 
 <head>
@@ -17,7 +16,8 @@ theme: slate
   <a href="/resources">External Resources</a>
 </div>
 
-# [Home](/home) [GitHub Repo](https://github.com/olincollege/dress-quest.git) [External Resources](/resources)
+
+
 
 ## bidrd
 a bird
