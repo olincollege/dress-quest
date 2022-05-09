@@ -29,11 +29,13 @@ Welcome to Dress Quest!
 The game is made of two main stages. In the first (pictured below), players get to dress up their frog. 
 A variety of hats, tops, and bottoms are available to choose from to form their dream outfit.
 
-![A Screenshot showing a dressed up frog.](/website_assets/screenshot_1.jpg =500x688)
+<img src="/website_assets/screenshot_1.jpg" alt="A Screenshot showing a dressed up frog." width="500" height="688"/>
+![A Screenshot showing a dressed up frog.](/website_assets/screenshot_1.jpg)
 
 Once the player finished their outfit, however, they lose their clothes. 
 They must jump through a series of randomly generated platforms and climb a tree where they will win back their clothes.
 
-![Screenshot of the platformer.](/website_assets/screenshot_2.jpg =500x688)
+<img src="/website_assets/screenshot_2.jpg" alt="Screenshot of the platformer." width="500" height="688"/>
+![Screenshot of the platformer.](/website_assets/screenshot_2.jpg)
 
 ## [Install](https://redesigned-doodle-c69ebf4f.pages.github.io#how-to-run) Dress Quest! 
