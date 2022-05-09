@@ -1,3 +1,7 @@
+'''
+Runs the main game loop.
+'''
+
 import pygame
 from controllers import DgController, FpController
 from game import Game

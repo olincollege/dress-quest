@@ -21,16 +21,15 @@ permalink: /about/
 <p style="color:fafafa"> spacer </p>
 
 ---
+<p align="center">
+<h1> Meet the Team </h1>
 
-# Meet the Team
-
-## [bidrd](https://github.com/crane919)
+<h2> [bidrd](https://github.com/crane919) </h2>
 a bird
 
-
-## [he](https://github.com/cmccurley22)
+<h2> [he](https://github.com/cmccurley22) </h2>
 a nerd
 
-## [stinky](https://github.com/c-laD)
+<h2> [stinky](https://github.com/c-laD) </h2>
 a turd
-
+</p>
